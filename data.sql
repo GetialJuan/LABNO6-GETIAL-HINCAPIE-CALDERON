@@ -37,3 +37,22 @@ VALUES
   ('Lowe','Quintessa','9170827-2'),
   ('Talley','Karyn','2243298-2'),
   ('Patel','Nigel','42461700-8');
+
+-- Datos de la tabla neighborhood
+INSERT INTO neighborhood (n_name,city)
+VALUES
+  ('Cascavel','Quibdó'),
+  ('Maracanaú','Los Patios'),
+  ('Guarapuava','Orito'),
+  ('João Pessoa','Pitalito'),
+  ('Diadema','Zona Bananera'),
+  ('Ponta Grossa','Quimbaya'),
+  ('São Luís','Barrancabermeja'),
+  ('Caucaia','Tuluá'),
+  ('Cajazeiras','Montenegro'),
+  ('Sousa','Miraflores'),
+  ('Ponta Grossa','Istmina'),
+  ('Chapecó','Cartagena'),
+  ('Maranguape','San Juan del Cesar'),
+  ('Camaçari','Palmira'),
+  ('Divinópolis','Pacoa');
