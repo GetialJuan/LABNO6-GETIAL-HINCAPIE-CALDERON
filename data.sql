@@ -18,3 +18,22 @@ VALUES
   ('Pena','Unity',2996567),
   ('Nolan','Fletcher',2963763),
   ('Sykes','Colt',2877839);
+
+-- Datos de la tabla builder
+INSERT INTO builder (b_lname,b_fname,license)
+VALUES
+  ('Nelson','Claire','7842432-K'),
+  ('Sexton','Shana','223458-0'),
+  ('Jarvis','Shay','25316217-1'),
+  ('Turner','Marshall','1166098-3'),
+  ('Hampton','Magee','8476477-9'),
+  ('Jones','Castor','44468841-6'),
+  ('Barnett','Urielle','409327-5'),
+  ('Barr','Harper','9114916-8'),
+  ('Taylor','Tucker','19945693-8'),
+  ('Chang','Joel','26680148-3'),
+  ('Rosales','Laura','26196743-K'),
+  ('Palmer','Quemby','9268809-7'),
+  ('Lowe','Quintessa','9170827-2'),
+  ('Talley','Karyn','2243298-2'),
+  ('Patel','Nigel','42461700-8');
