@@ -36,4 +36,16 @@ FROM ((subcontractor NATURAL JOIN Hire_Info) NATURAL JOIN builder)) LIMIT 11;
 
 ((SELECT b_name, h_name
 FROM (HOUSE RIGHT JOIN builder ON builder.bid = house.bid)  -- Para mostrar todos los constructores (asi no tengan casa)
-    WHERE finish_date OR FinishDate is NULL) ORDER BY B_Lname) LIMIT 14;
+    WHERE finish_date OR FinishDate is NULL) ORDER BY B_Lname) LIMIT 14;    
+    
+--Ejercicio No.6: Obtenga el nombre y el apellido en un solo campo llamado Full_name de los constructores de las 
+--casas llamadas "Nova" o "El cañaduzal". (5 registros)
+Select  CONCAT( b_fname,' ', b_lname ) as Full_name from ( builder natural join house ) where (h_name='Nova' or h_name='El cañaduzal') limit 5
+
+--Ejercicio No.7: Presente el nombres de todas las casas que han sido construidas por los constructores cuyo apellido comience con una 'P', 
+--el resultado debe incluir el nombre de estos constructores y sus apellidos
+Select  h_name,b_fname,b_lname from ( builder natural join house ) where b_lname LIKE 'P%'
+ 
+--Mostrar el nombre del barrio(s) y la ciudad que tiene una casa nombrada “Las consultas”. Asegúrese de que esta casa exista en sus registros y 
+--que existan registros coincidentes en Barrios (Neighborhood)
+Select n_name,city from ( neighborhood natural join house ) where h_name='Las consultas'
